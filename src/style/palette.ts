@@ -1,8 +1,10 @@
 const palette = {
   mode: "light",
   common: {
-    black: "#000",
-    white: "#fff",
+    main: "#fff",
+    light: "rgba(0, 0, 0, 0.6)",
+    dark: "#000",
+    text: "rgba(0, 0, 0, 0.87",
   },
   primary: {
     main: "#1976d2",
