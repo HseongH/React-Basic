@@ -1,22 +1,22 @@
-import React from "react";
+import { ReactNode, FunctionComponent } from "react";
 import { ThemeProvider, Global } from "@emotion/react";
 import emotionReset from "emotion-reset";
 import theme from "./theme";
 
-interface GlobalStyleProps {
-  children: React.ReactNode;
+interface GlobalStylePropsInterface {
+  children: ReactNode;
 }
 
 /**
  * @typedef Props
- * @prop {React.ReactNode} children
+ * @prop {ReactNode} children
  */
 
 /**
  * @param {Props} props
- * @return {React.FC<GlobalStyleProps>}
+ * @return {FunctionComponent<GlobalStylePropsInterface>}
  */
-const GlobalStyle: React.FunctionComponent<GlobalStyleProps> = ({
+const GlobalStyle: FunctionComponent<GlobalStylePropsInterface> = ({
   children,
 }) => {
   return (
@@ -24,15 +24,6 @@ const GlobalStyle: React.FunctionComponent<GlobalStyleProps> = ({
       <Global
         styles={{
           emotionReset,
-
-          ":root": {
-            backgroundColor: theme.palette.common.main,
-            color: theme.palette.common.text,
-            fontSize: theme.typography.fontSize,
-            fontWeight: theme.typography.fontWeight,
-            fontFamily: theme.typography.fontFamily,
-            lineHeight: theme.typography.lineHeight,
-          },
 
           "*, *::after, *::before": {
             boxSizing: "border-box",

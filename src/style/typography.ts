@@ -1,4 +1,6 @@
-const typography = {
+import TypographyInterface from "./typography.type";
+
+const typography: TypographyInterface = {
   fontSize: "16px",
   fontWeight: 400,
   fontFamily: "'Noto Sans KR', sans-serif",

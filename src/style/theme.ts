@@ -1,7 +1,9 @@
 import palette from "./palette";
 import typography from "./typography";
 
-const theme = {
+import { Theme } from "@emotion/react";
+
+const theme: Theme = {
   palette,
   typography,
   spacing: [

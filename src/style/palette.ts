@@ -1,4 +1,6 @@
-const palette = {
+import PaletteInterface from "./palette.type";
+
+const palette: PaletteInterface = {
   mode: "light",
   common: {
     main: "#fff",
@@ -48,9 +50,7 @@ const palette = {
     disabled: "rgba(0, 0, 0, 0.38)",
   },
   divider: "rgba(0, 0, 0, 0.12)",
-  action: {
-    disabledOpacity: 0.38,
-  },
+  disabledOpacity: 0.38,
 };
 
 export default palette;
