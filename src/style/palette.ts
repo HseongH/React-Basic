@@ -1,6 +1,4 @@
-import PaletteInterface from "./palette.type";
-
-const palette: PaletteInterface = {
+const palette = {
   mode: "light",
   common: {
     main: "#fff",
