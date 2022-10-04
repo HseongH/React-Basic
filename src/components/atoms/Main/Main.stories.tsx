@@ -12,4 +12,4 @@ const Template: ComponentStory<typeof Main> = () => (
   </Main>
 );
 
-export const Primary = Template.bind({});
+export const Basic = Template.bind({});
