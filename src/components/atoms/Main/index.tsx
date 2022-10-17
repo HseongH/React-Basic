@@ -1,7 +1,7 @@
 import { ReactNode, FunctionComponent } from "react";
 import StyledMain from "./Main.style";
 
-interface MainPropsInterface {
+interface MainProps {
   children: ReactNode;
 }
 
@@ -12,9 +12,9 @@ interface MainPropsInterface {
 
 /**
  * @param {Props} props
- * @return {FunctionComponent<MainPropsInterface>}
+ * @return {FunctionComponent<MainProps>}
  */
-const Main: FunctionComponent<MainPropsInterface> = ({ children }) => {
+const Main: FunctionComponent<MainProps> = ({ children }) => {
   return <StyledMain>{children}</StyledMain>;
 };
 

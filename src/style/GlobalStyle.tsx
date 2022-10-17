@@ -3,7 +3,7 @@ import { ThemeProvider, Global } from "@emotion/react";
 import emotionReset from "emotion-reset";
 import theme from "./theme";
 
-interface GlobalStylePropsInterface {
+interface GlobalStyleProps {
   children: ReactNode;
 }
 
@@ -14,11 +14,9 @@ interface GlobalStylePropsInterface {
 
 /**
  * @param {Props} props
- * @return {FunctionComponent<GlobalStylePropsInterface>}
+ * @return {FunctionComponent<GlobalStyleProps>}
  */
-const GlobalStyle: FunctionComponent<GlobalStylePropsInterface> = ({
-  children,
-}) => {
+const GlobalStyle: FunctionComponent<GlobalStyleProps> = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <Global

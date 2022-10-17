@@ -10,7 +10,7 @@ import {
   StyledBody2,
 } from "./Typography.style";
 
-interface TypoPropsInterface {
+interface TypoProps {
   variant?: string;
   children: ReactNode;
 }
@@ -23,12 +23,9 @@ interface TypoPropsInterface {
 
 /**
  * @param {Props} props
- * @return {FunctionComponent<TypoPropsInterface>}
+ * @return {FunctionComponent<TypoProps>}
  */
-const Typography: FunctionComponent<TypoPropsInterface> = ({
-  variant,
-  children,
-}) => {
+const Typography: FunctionComponent<TypoProps> = ({ variant, children }) => {
   switch (variant) {
     case "h1":
       return <StyledH1>{children}</StyledH1>;
